@@ -28,6 +28,7 @@ class Triangle
      end
   end
 end
+  #we end the class above, and begin a new class. 
 
   class TriangleError < StandardError
 
