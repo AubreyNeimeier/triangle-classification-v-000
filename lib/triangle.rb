@@ -18,9 +18,9 @@ class Triangle
       end
     elsif ((side_2 == side_3 && side_2 != side_1 && side_3 != side_1) || (side_1 == side_3 && side_1 != side_2 && side_2 != side_3) || (side_1 == side_2 && side_1 != side_3 && side_2 != side_3))
       :isosceles
-    elsif ((side_1 == side_2 ) && (side_1 == side_3) && (side_2 == side_3))
+    elsif ((side_1 == side_2 ) && (side_1 == side_3)
       #here we can't simply say if 1==2 ==3 because it must only be in sets of two
-      #so we do something like if 1==2 && 2==3 && 1==3 instead
+      #so we do something like if 1==2 && 1==3 instead
        :equilateral
     else
       #no need to specify what scalene is if all others are accounted for
@@ -28,7 +28,7 @@ class Triangle
      end
   end
 end
-  #we end the class above, and begin a new class. 
+  #we end the class above, and begin a new class.
 
   class TriangleError < StandardError
 
