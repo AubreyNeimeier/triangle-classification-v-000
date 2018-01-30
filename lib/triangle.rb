@@ -35,7 +35,7 @@ class Triangle
   #  begin
     #raise TriangleError
   #end
-  
+
 end
   #we end the class above, and begin a new class.
 
