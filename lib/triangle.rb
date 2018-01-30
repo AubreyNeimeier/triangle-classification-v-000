@@ -13,6 +13,8 @@ class Triangle
   def kind
       if ((side_1 <= 0) || (side_2 <= 0) || (side_3 <= 0) || (side_2 + side_3 <= side_1) || (side_1 + side_3 <= side_2) || (side_1 + side_2 <= side_3))
         #for complex booleans, use parenthesis.
+        # we can move all this logic to another method such as #validate_triangle
+        #validate_triangle
       begin
         raise TriangleError
       end
@@ -27,6 +29,13 @@ class Triangle
        :scalene
      end
   end
+
+  #def validate_triangle
+#  if ((side_1 <= 0) || (side_2 <= 0) || (side_3 <= 0) || (side_2 + side_3 <= side_1) || (side_1 + side_3 <= side_2) || (side_1 + side_2 <= side_3))
+  #  begin
+    #raise TriangleError
+  #end
+  
 end
   #we end the class above, and begin a new class.
 
